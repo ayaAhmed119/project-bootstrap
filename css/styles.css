@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar .btn-warning {
+    background-color: #FF9900;
+    color: white;
+    border: none;
+  }
+  
+  .navbar .btn-warning:hover {
+    background-color: #e68900;
+  }
+  
+  #products .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  #products .card:hover {
+    transform: translateY(-5px);
+  }
+  #heroCarousel .carousel-item img {
+    height: 300px; 
+    object-fit: cover; 
+  }
+  
+  #heroCarousel .carousel-caption {
+    bottom: 10px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 6px;
+  }
+  .footer-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer-button:hover {
+    text-decoration: underline;
+  }

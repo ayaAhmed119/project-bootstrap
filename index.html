@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Amazon</a>
+      <div>
+        <a class="btn btn-outline-light me-2" href="login.html">Login</a>
+        <a class="btn btn-warning" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="one.jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Welcome to Amazon</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="two.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Best Deals Await You!</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="three.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Shop the Latest Trends</h1>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div class="container py-4">
+    <h2 class="mb-4">Featured Products</h2>
+    <div class="row" id="products-container"></div>
+    <nav aria-label="Page navigation" class="mt-4">
+      <ul class="pagination justify-content-center" id="pagination"></ul>
+    </nav>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4">
+    <div class="container text-center mb-3">
+      <button class="btn btn-outline-light" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <h6>Get to Know Us</h6>
+          <button class="footer-button">About Amazon</button><br />
+          <button class="footer-button">Careers</button><br />
+          <button class="footer-button">Amazon Science</button>
+        </div>
+        <div class="col-md-3">
+          <h6>Shop with Us</h6>
+          <button class="footer-button">Your Account</button><br />
+          <button class="footer-button">Your Orders</button><br />
+          <button class="footer-button">Your Addresses</button><br />
+          <button class="footer-button">Your Lists</button>
+        </div>
+        <div class="col-md-3">
+          <h6>Partner with Us</h6>
+          <button class="footer-button">Brand Protection</button><br />
+          <button class="footer-button">Advertise Your Products</button><br />
+          <button class="footer-button">Sell on Amazon</button>
+        </div>
+        <div class="col-md-3">
+          <h6>Let Us Help You</h6>
+          <button class="footer-button">Help</button><br />
+          <button class="footer-button">Shipping Policies</button><br />
+          <button class="footer-button">Returns & Exchanges</button>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center">© 2025 Amazon Clone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
